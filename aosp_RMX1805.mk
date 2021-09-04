@@ -15,7 +15,7 @@ PRODUCT_BRAND := oppo
 PRODUCT_DEVICE := RMX1805
 PRODUCT_MANUFACTURER := oppo
 PRODUCT_NAME := aosp_RMX1805
-PRODUCT_MODEL := realme 2
+PRODUCT_MODEL := realme 2/C1
 
 # PRODUCT_GMS_CLIENTID_BASE := android-oppo
 TARGET_VENDOR := oppo
@@ -27,3 +27,18 @@ BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ2A.210505.002/7246365:user/rel
 
 #TARGET_GAPPS_ARCH := ARM64
 TARGET_BOOT_ANIMATION_RES := 720
+
+# PixelPlusUI
+TARGET_FACE_UNLOCK_SUPPORTED := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ACORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false 
+
+# PixelPlusUI OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.ppui.device_name=Realme2/C1 \
+    ro.ppui.version=3.9 \
+    ro.ppui.version_code=Eternal \
+    ro.ppui.is_official=true \
+    ro.ppui.maintainer_name=Alias
